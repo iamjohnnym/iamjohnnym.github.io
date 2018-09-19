@@ -1,0 +1,10 @@
+---
+---
+
+@import "variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/bootstrap";
+
+.content {
+  font-size: $custom-font-size;
+}

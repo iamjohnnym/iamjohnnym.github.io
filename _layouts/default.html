@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <title>{{ site.title }} | {{ site.tagline }}</title>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | prepend: site.baseurll }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | prepend: site.baseurll }}">
 
 {% seo %}
   </head>
@@ -14,15 +17,15 @@
     <header>
       <div class="container">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <small>{{ site.sub_tagline | default: site.github.project_tagline }}</small>
+        <ol>
+        {% for nav in site.data.main_nav.docs %}
+        <li>
+          <a class="{% if nav.url == page.url %}active-nav{% endif %}" href="{{ nav.url | prepend: site.baseurll }}">--{{ nav.title }}</a>
+        </li>
+        {% endfor %}
+        </ol>
 
-        <section id="downloads">
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
-          {% endif %}
-          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
       </div>
     </header>
 
@@ -31,6 +34,20 @@
         {{ content }}
       </section>
     </div>
+
+    <div class="container">
+      <section id="downloads">
+        {% if site.show_downloads %}
+          <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
+          <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
+        {% endif %}
+        <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+      </section>
+    </div>
+
+    <script src="{{ '/assets/vendor/jquery.min.js' | prepend: site.baseurll }}"></script>
+    <script src="{{ '/assets/vendor/popper.min.js' | prepend: site.baseurll }}"></script>
+    <script src="{{ '/assets/vendor/bootstrap.min.js' | prepend: site.baseurll }}"></script>
 
     {% if site.google_analytics %}
       <script>

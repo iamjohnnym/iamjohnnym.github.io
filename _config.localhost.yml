@@ -1,4 +1,4 @@
-url: https://iamjohnnym.com
+baseurl: http://localhost:4000
 title: iamjohnnym
 description: A technical journal to discuss ideas, opinions, frustrations, and tips. Covering programming, developing, operations, systems, and cloud technologies.
 tagline: musings of an operator
@@ -28,4 +28,3 @@ exclude:
   - Gemfile.lock
   - yarn.lock
   - packages.json
-  - ruby

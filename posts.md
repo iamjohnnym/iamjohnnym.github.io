@@ -20,4 +20,3 @@ show_downloads: 0
   </div>
 </div>
 {% endfor %}
-

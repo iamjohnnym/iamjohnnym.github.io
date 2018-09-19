@@ -1,0 +1,20 @@
+docs_list_title: Main Navigation
+docs:
+
+- title: home
+  url: /index
+
+- title: whoami
+  url: /whoami
+
+- title: resume
+  url: /resume
+
+- title: posts
+  url: /posts
+
+- title: github
+  url: /github
+
+- title: linkedin
+  url: /linkedin

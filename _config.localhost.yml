@@ -8,6 +8,7 @@ google_analytics: UA-118583467-1
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 github: [metadata]
 

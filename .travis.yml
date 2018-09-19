@@ -1,0 +1,22 @@
+language: ruby
+cache: bundler
+dist: trusty
+rvm:
+- 2.4.0
+before_script:
+- bundle install
+- yarn install
+script:
+- bundle exec jekyll build
+env:
+  global:
+  - secure: kSatpjwB8di4qJlXMjSyO/vwh6Z/MtzsjKuEHPfgh3iEFasostrXXYJEFcw5Yn7qT0ySaL7/5j2fSKI3aC0iO/4tyiB4Wn7+z6GdCv8ulwRQvizlFImj5YNKnfUhCbo/IIwY6TL3CfLcd0Awi1JR+EaLeEbS+igrQbEssRFe5ZaBuTg5UCbVqMsye8xnMarGwkyvXdMhRqJM8HqEWha5BLgKBHBUZ1vjy7rfPEKhAmby4hTnx7Ye9HPeUA4G9JUcILgtuWxChV34CVqoD3oPkgbiaONK5AtLCOEPdDl5hCwqF7EZMxA2jPLphffwOq3gOkqFI4N/x9aNUAR+Ho6kt3UHui0JCAbFHn/OHE+x3gvx/k9v8nuKGAwn/1dgfHUqMiH7FNQV5bpRuzy9eICxvvV8JUivXTeEsXvmJ+sazRYN2g1BhJzpT6mwuZBGMaPR9exHGlDhYKcdtVijvlfM4llKb3NPbMlhRpHMF5kDya4nbtHXTs/VYlTmBVBLRnpdSNbzbWTXumQz8Hr7MFCkIFqSY0gXrqlJBpwlxDJABCmqSG6szJyy7uRQ4Jc5nIbzmsuQD7wKs3C1Cw7lTmCzRMIhkvrrhRdSkWKQplNxwZXgadhX29VazSVt3wD2odZO4ppv60Ncf0BaEB0YiIWqVojmeeEtdxFNUMquGpLrzUU=
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  target-branch: master
+  fqdn: iamjohnnym.com
+  on:
+    branch: develop

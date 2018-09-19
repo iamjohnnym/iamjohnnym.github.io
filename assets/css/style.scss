@@ -2,3 +2,96 @@
 ---
 
 @import 'jekyll-theme-hacker';
+
+header h1 {
+	font-size: 30px;
+	line-height: 1.5;
+	margin: 0 0 0 0px;
+    font-weight: 550;
+    color: #caae39;
+	font-family: monospace;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+	letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+header h1:before {
+    content: "./";
+    font-weight: 550;
+    font-size: 30px;
+	font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: monospace;
+    color: #caae39;
+	letter-spacing: -0.03em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+body {
+	color: #ffffff;
+	font-family: monospace;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.result li.active a {
+    color: lightgray;
+    cursor: default;
+}
+
+.command {
+    color: #70a430;
+}
+
+.comment {
+    color: #dcded9;
+}
+
+.blink {
+    animation-duration: 2s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, start);
+}
+
+@keyframes blink {
+    80% {
+        visibility: hidden;
+    }
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: -14px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #49a4a8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active-nav {
+    color: #4e7aae !important;
+}
+
+.post-container {
+    margin-bottom: 50px;
+}

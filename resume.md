@@ -3,7 +3,7 @@ layout: default
 permalink: /resume
 ---
 
-# ./ resume
+# ./resume
 
 ```bash
 johnny(8)                   Johnny Martin Man Page                   johnny(8)

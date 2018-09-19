@@ -3,11 +3,12 @@ title: iamjohnnym
 description: A technical journal to discuss ideas, opinions, frustrations, and tips. Covering programming, developing, operations, systems, and cloud technologies.
 tagline: musings of an operator
 sub_tagline: "<span class='command'>[iamjohnnym@musings ~] $</span> service operatord start <span class='comment'> # Begin musings of an operator</span><span class='blink'>_</span>"
-show_downloads: true
+show_downloads: false
 google_analytics: UA-118583467-1
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 github: [metadata]
 

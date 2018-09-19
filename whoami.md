@@ -3,21 +3,22 @@ layout: default
 permalink: /whoami
 ---
 
-# ./ whoami
+# ./whoami
 
 ## Who
 
-My name is John but since its so common, I prefer Johnny, an equally common name.  I’ve been playing with technology since the only gui was a command line and you lost a connection when someone picked up the telephone.  I built websites when scrolling marquee was the cheap method of everything Flash.  I break things to understand why things work the way they do, so that I can understand how the pieces fit together.
-Where
+I am Johnny, Hello!  I'm still trying to discover my role within technology.  It's an ever changing landscape that requires you to be nimble enough to jump across the ever expanding chasms.  I thoroughly enjoy the challenges it provides while also being able to tickle that creative itch.  Sometimes I have the urge to throw my machine out of the window.
 
-I started with Linux From Scratch, Gentoo…a few times. I had floppies for days.  I learned how to conjure bash scripts to help my sysadmin role be a bit more tolerable.  I wanted to be a developer so I learned PHP and all of its treachery.  I learned how to write and debug complex SQL statements while also learning how to get the most out of tuning configs and schemas.  I wanted more from programming so I learned python, then rails, lua, and some others.  Automation became life though, Ansible has a special place in my heart, Salt Stack isn’t bad when done correctly, but I’m still learning how to cook with Chef.
+I find solace in the bathroom when a problem truly stumps me.  The peace tends to let the answers come to light.
 
-I worked on an ambulance of awhile; that was wild.
+I've been in technology since I was barely walking.  My dad was a punchcard enthusiast for some big entities while my mom built computers in a homegrown business, she later took on a web hosting business during the `dotcom era`.  I helped her out and thats where I began my journey, actionscript, angelfire, and that silliness.  However, I didn't embrace my inner nerd, outside of video games, until later in life.  I wish I had really embraced it sooner.
 
-I ski.
+I ski, game, enjoy some delicious Ciders, and fancy myself a wine connoisseur that doesn't descriminate.  Also food. Yum.
+
 ## Why
 
-I want to write more and I enjoy educating where I can.  I’ve always seemed to find some obscure websites have the answer’s I may need.  Why not keep the sequence going?
+Blogging is hard.  Finding the time and putting in the effort is far more difficult than I had intented.  Given that I use quite a bit of blogs for answers to obscure questions, I too, would like to be part of that hub.  Let's see.
+
 ## What
 
 I’ll write about common practices, programming things, operations, developing, TIL’s, basically, just whatever’s on my mind or I think someone could benefit from the info.

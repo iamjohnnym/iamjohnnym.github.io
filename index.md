@@ -1,8 +1,8 @@
 ---
 layout: default
-permalink: /posts
-url: /posts
-title: Posts
+permalink: /
+url: /
+title: Index
 show_downloads: 0
 ---
 

@@ -10,7 +10,7 @@ show_downloads: 0
 <div class="post-container">
   <div>
     <span>
-      <a href="{{ post.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
       <small style="color:rgb(102, 102, 102);">written by {{ post.author }}</small>
     </span>
     <span style="float:right;">{{ post.date }}</span>

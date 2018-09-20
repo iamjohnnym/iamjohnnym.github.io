@@ -10,8 +10,6 @@ tags:
 excerpt_separator: <!--more-->
 ---
 
-# ./{{ title }}
-
 Hello,  I'm currently in the process of building the site out.  This is a placeholder post!
 
 Have a super day and thanks for visiting.

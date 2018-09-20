@@ -51,7 +51,7 @@ serve-dev: install include-yarn-deps
 	JEKYLL_ENV=development $(JEKYLL) serve --config _config.localhost.yml
 
 clean-deploy:
-	rm -rf node_modules script vendor *.yml *.lock
+	rm -rf node_modules script .*.yml *.lock *.json Gemfile
 
 clean:
 	rm -fr _site/

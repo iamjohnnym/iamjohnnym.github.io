@@ -9,7 +9,7 @@ tags:
   - placeholder
 ---
 
-# ./{{ title }}
+# ./Work in Progress
 
 Hello,  I'm currently in the process of building the site out.  This is a placeholder post!
 

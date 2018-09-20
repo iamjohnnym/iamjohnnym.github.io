@@ -4,10 +4,9 @@ dist: trusty
 rvm:
 - 2.4.0
 before_script:
-- bundle install
-- yarn install
+- make install
 script:
-- bundle exec jekyll build
+- make build
 env:
   global:
   - secure: bO1dm/7/mzS5gHT+qC/RD5aycnpxBTn8Z15TuKgAANwgm92syU+9ApgJeVT8mMdr4PiUhLpJR2z8lXy76/MfNXS/kv3ymzMrx2oSCnNhuYAuP+/yPbcgJtQ6Kwek9w07oKhTT4pSDLg4aie3011JBOfmDkUPvSQjVJ1YvwsooiySlJz/l3MdN7irUGc2Al2cnsXLRJZrt5SWy1XBa/jOV7i3AQP1pqwPoGIHwQufvIFMDWLwDKaG1JEzFG1u7/2HTiBKoGuJugwnUbvj7B9WdVpxcgzZqIWisIvAXqJWohIWHfWMAb331jxr2J2sD0pNJSFkWh9Oejhu/zHRXxGY+uTMNgl3W73UkjJBs4reRvE5TtEknvzCaNy5SoIcoSunb0iECBjgBtgLAj38211S9DYt+lCqIBCbh1/9FGMPksSxEyBfxPwjTf7PTUpvvGUOgx7dbJZQGemw6ADNWZOFLBnW5uoV6QKEK2+3VQOkK/06W5i6YKxMyOqlLZ/++AEEgVOzJOd84Ig3ulhZhZy+eotaiyX8ZGS9K9GaxFOjIgs5Pb5XpBL0K+LM6WQ5EziOeRXIciHH6sXrRpUZGxhKDBEhFEeHmU/t8ma1RboM9AulHm6NPEEL8J90xcH4pjGdONvyCQyrm4vEIINxPP4Bo9vzylgQcuBapiwHM5ZVMg0=

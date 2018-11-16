@@ -9,7 +9,7 @@ header h1 {
 	margin: 0 0 0 0px;
     font-weight: 550;
     color: #caae39;
-	font-family: monospace;
+	font-family: 'Courier New', Courier, monospace;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
 	letter-spacing: -1px;
     -webkit-font-smoothing: antialiased;
@@ -19,12 +19,12 @@ header h1:before {
     content: "./";
     font-weight: 550;
     font-size: 30px;
-	font-family: monospace;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	font-family: monospace;
+	font-family: 'Courier New', Courier, monospace;
     color: #caae39;
 	letter-spacing: -0.03em;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
 	color: #ffffff;
-	font-family: monospace;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -71,11 +71,11 @@ ol {
     overflow: hidden;
 }
 
-li {
+ol li {
     float: left;
 }
 
-li a {
+ol li a {
     display: block;
     color: #49a4a8;
     text-align: center;
@@ -84,7 +84,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+ol li a:hover {
     background-color: #111;
 }
 

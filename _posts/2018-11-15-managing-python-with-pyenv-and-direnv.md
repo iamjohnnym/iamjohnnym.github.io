@@ -11,7 +11,7 @@ tags:
 excerpt_separator: <!--more-->
 ---
 
-Whether you're just getting started or you're a seasoned pythonista, pythoneer, or ${INSERT_YOUR_VERB_HERE}, you've probably found managing your python environments to be tedious and rather painful.  Managing Python versions, libraries, and various dependencies is like playing shuffle board where the object is to not hit any other puck; if you do, the probability of a cascading effect of pucks flying everywhere you don't want them to be will soon follow.  Perhaps a (╯°□°)╯︵ uoɥʇʎd moment will occur.  Let's mitigate that.
+Whether you're just getting started or you're a seasoned pythonista, pythoneer, or ${INSERT_YOUR_NOUN_HERE}, you've probably found managing your python environments to be tedious and rather painful.  Managing Python versions, libraries, and various dependencies is like playing shuffle board where the object is to not hit any other puck; if you do, the probability of a cascading effect of pucks flying everywhere you don't want them to be will soon follow.  Perhaps a (╯°□°)╯︵ uoɥʇʎd moment will occur.  Let's mitigate that.
 
 **RELATED REPO** :: https://github.com/iamjohnnym/auto-pyvenv
 

@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 
 Whether you're just getting started or you're a seasoned pythonista, pythoneer, or ${INSERT_YOUR_NOUN_HERE}, you've probably found managing your python environments to be tedious and rather painful.  Managing Python versions, libraries, and various dependencies is like playing shuffle board where the object is to not hit any other puck; if you do, the probability of a cascading effect of pucks flying everywhere you don't want them to be will soon follow.  Perhaps a (╯°□°)╯︵ uoɥʇʎd moment will occur.  Let's mitigate that.
 
-**RELATED REPO** :: https://github.com/iamjohnnym/auto-pyvenv
+**RELATED REPO** :: https://github.com/iamjohnnym/auto-pyvenv :: [![Build Status](https://travis-ci.com/iamjohnnym/auto-pyvenv.svg?branch=master)](https://travis-ci.com/iamjohnnym/auto-pyvenv)
 
 <!--more-->
 
@@ -172,3 +172,57 @@ direnv: export +VIRTUAL_ENV ~PATH
 ```
 
 We're done.  That's it.  Everything we've ever needed to help maintain a semblence of sanity when working with different python versions and project dependencies!
+
+**NOTE** if you would like a more robust `.envrc` file, one that will auto exec even if you don't declare a `.python-version` file or install the python version if it doesn't exist, use the following code block inside of your `.envrc` file.  It's a bit more comprehensive but the gist is this.
+
+- Check if `.python-version` exists
+  - Check if that version of python is not installed with `pyenv`
+    - install python version
+    - upgrade `pip` and `setuptools`
+    - Check if python version is `2.x`
+      - install `py2venv`
+- Check if `.venv` does not exist
+  - create venv
+- Activate virtualenv
+
+**the goods**
+
+```bash
+# .envrc
+# check if python version is set in current dir
+if [ -f ".python-version" ] ; then
+    # ensure the python version is installed, if not, install it and configure
+    # for compatibility with `auto-pyvenv`
+    if [[ ! "$(pyenv versions | egrep $(cat .python-version))" ]] ; then
+        echo -n "Python version not found, installing "
+        echo "$(cat .python-version)"
+        pyenv install "$(cat .python-version)"
+        # rehash pyenv due to new install
+        pyenv rehash
+        # initial pyenv
+        eval "$(pyenv init -)"
+        echo "Upgrading pip to latest"
+        pyenv shell $(cat .python-version)
+        # upgrading setuptools in the event they are too old for `py2venv`
+        pip install --upgrade pip setuptools
+        if [ $(cat .python-version | egrep '^2.') ] ; then
+            # `py2venv` allows you to install a virtualenv with
+            # `python -m venv .venv`
+            echo "Python 2.x detected.  Installing 'py2venv'"
+            pip install py2venv
+        fi
+    fi
+fi
+# if a .venv dir doesn't exist, create one based on the current activated
+# python version
+if [ ! -d ".venv" ] ; then
+    echo -n "Installing virtualenv for "
+    echo "$(python -V)"
+    python -m venv .venv
+fi
+# source the venv dir
+echo -n "Activating virtualenv for "
+echo "$(python -V)"
+source .venv/bin/activate
+echo "$(which python)"
+```

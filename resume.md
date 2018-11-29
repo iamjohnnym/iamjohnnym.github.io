@@ -92,7 +92,7 @@ OPTIONS
 
        --developer
 
-              * Python, PHP, Lua, Javascript, Java
+              * Python, PHP, Lua, Javascript, Java, Ruby, ReactJS
 
               * Bash, Powershell
 
@@ -123,9 +123,7 @@ BUGS
 
 
 AUTHOR
-       * E-mail: j at iamjohnnym dot com
-
-       * Phone: (951) 533 - 7610
+       * E-mail: johnny at iamjohnnym dot com
 
        * LinkedIn: https://www.linkedin.com/in/iamjohnnym/
 
